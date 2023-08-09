@@ -26,11 +26,14 @@
 .socialsWrapper {
   display: flex;
   gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 @media (max-width: $md) {
   .contentWrapper {
     padding-top: 0;
     box-shadow: none;
     border-radius: 0;
+    background-color: var(--background-color);
   }
 }
