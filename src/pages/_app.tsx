@@ -46,6 +46,9 @@ export default function App({ Component, pageProps }: AppProps) {
       >
         <ThemeSwitch
           className={layoutStyles.themeSwitch}
+          sx={{
+            position: 'fixed',
+          }}
           checked={isDarkTheme}
           onChange={handleThemeSwitch}
         />
