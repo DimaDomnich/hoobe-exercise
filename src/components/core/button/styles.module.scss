@@ -1,0 +1,31 @@
+.btn {
+  border-radius: 0.625rem;
+  padding: 0.5rem;
+  height: auto;
+  background-color: var(--primary);
+  color: var(--white);
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.12s ease-in-out;
+  cursor: pointer;
+
+  span {
+    font-size: 0.935rem;
+    font-weight: 600;
+  }
+
+  &:hover {
+    background-color: var(--primary-dark);
+  }
+  &:focus {
+    background-color: var(--primary-dark);
+  }
+  &:active {
+    background-color: var(--primary-light);
+  }
+}

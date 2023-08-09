@@ -1,0 +1,16 @@
+.wrapper {
+  background-color: var(--black);
+  border-radius: 50%;
+  height: 2.5rem;
+  width: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0.5;
+  transition: all 200ms ease-out;
+  margin-block: 1rem;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}

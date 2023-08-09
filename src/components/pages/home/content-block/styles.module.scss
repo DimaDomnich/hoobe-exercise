@@ -1,0 +1,36 @@
+@import '@/styles/breakpoints.module.scss';
+
+.contentWrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2.5rem;
+
+  box-shadow: 0 0.75rem 44px 0 rgba(78, 81, 82, 0.12);
+  background-color: var(--white);
+
+  max-width: 41.5rem;
+  margin-inline: auto;
+  padding-block: 1rem 72px;
+}
+.imageWrapper {
+  margin-block: 1rem 0.6rem;
+}
+.title {
+  color: var(--black);
+  font-weight: 600;
+  font-size: var(--font-size-h4);
+  text-align: center;
+}
+.socialsWrapper {
+  display: flex;
+  gap: 0.5rem;
+}
+@media (max-width: $md) {
+  .contentWrapper {
+    padding-top: 0;
+    box-shadow: none;
+    border-radius: 0;
+  }
+}

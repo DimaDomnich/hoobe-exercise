@@ -1,0 +1,16 @@
+.a {
+  text-decoration: none;
+  padding: 0.25rem 0.75rem;
+  display: flex;
+  align-items: center;
+  border-radius: 1.125rem;
+  color: var(--text-gray);
+  transition: color 0.3s ease-in-out;
+  font-size: var(--font-size-small);
+  font-weight: 600;
+
+  &:hover {
+    text-decoration: underline;
+    color: var(--primary);
+  }
+}

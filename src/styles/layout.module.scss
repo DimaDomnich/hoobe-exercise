@@ -1,0 +1,23 @@
+@import './breakpoints.module.scss';
+
+.themeSwitch {
+  position: fixed;
+  top: 1rem;
+  right: 3rem;
+}
+.layoutContainer {
+  background-color: var(--background-color);
+  min-height: 100vh;
+  & *::selection {
+    background-color: #86d9ca;
+  }
+}
+
+@media (max-width: $md) {
+  .layoutContainer {
+    --background-color: #fff;
+  }
+  .themeSwitch {
+    right: 1rem;
+  }
+}
