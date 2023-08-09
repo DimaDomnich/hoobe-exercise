@@ -9,9 +9,9 @@ type SocialKey = keyof typeof socialsIconsMap;
 
 export const getSocialsImagePath = (link: string) => {
   const matchedSocialSrcKey: SocialKey =
-    Object.keys(socialsIconsMap).find((socialKey) =>
+    (Object.keys(socialsIconsMap).find((socialKey) =>
       link.includes(socialKey)
-    ) ?? ('instagram' as SocialKey);
+    ) as SocialKey) ?? ('instagram' as SocialKey);
 
   return socialsIconsMap[matchedSocialSrcKey];
 };

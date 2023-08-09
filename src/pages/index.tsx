@@ -21,16 +21,7 @@ const Home = ({ data }: Props) => {
           contentItems={data.content}
           socials={data.userSocialPlatform}
         />
-        <footer
-          style={{
-            paddingBlock: '96px 32px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            flexDirection: 'column',
-            rowGap: 18,
-          }}
-        >
+        <footer className={styles.footer}>
           <Button className={styles.actionsWrapper}>
             <Image
               width={24}
